@@ -5,3 +5,23 @@
         The gif shows the demo of using the kubeaim command-line tool.
     </p>
 </p>
+
+# kubeaim
+## What is it?
+
+Kubeaim is a command line tool that provides an easy way to switch between kubernetes contexts. With kubeaim you can quickly and easily switch between k8s contexts.
+
+## How to use it?
+
+Download the binary from the [`latest release.`](https://github.com/achelak/kubeaim/releases)
+
+## Dependecies
+Installed the kubcectl command-line tool. 
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or would like to get in touch, please open an issue on Github.
