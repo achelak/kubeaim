@@ -1,0 +1,32 @@
+builds:
+  - id: windows
+    main: ./main.go
+    binary: kubeaim
+    goos:
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -X "main.Version={{.Env.APP_VERSION}}"
+  - id: darwin
+    main: ./main.go
+    binary: kubeaim
+    goos:
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -X "main.Version={{.Env.APP_VERSION}}"
+  - id: linux
+    main: ./main.go
+    binary: kubeaim
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -X "main.Version={{.Env.APP_VERSION}}"
+        

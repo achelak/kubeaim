@@ -1,0 +1,39 @@
+name: goreleaser
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  goreleaser:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Get current tag
+        id: tag
+        run: echo "tag=$(git describe --abbrev=0 --tags)" >> $GITHUB_ENV
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+
+      - name: Use tag name
+        run: echo "Tag name is ${{ env.tag }}"
+      
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v4
+        with:
+          distribution: goreleaser
+          version: latest
+          args: release --clean
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          APP_VERSION: ${{ env.tag }}
+
