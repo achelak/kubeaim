@@ -9,9 +9,7 @@ import (
     "github.com/AlecAivazis/survey/v2"
 )
 
-var (
-    Version    string
-)
+var Version string
 
 func main() {
     version := flag.Bool("version", false, "print version information")
