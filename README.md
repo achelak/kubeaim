@@ -16,7 +16,7 @@ Kubeaim is a command line tool that provides an easy way to switch between kuber
 Download the binary from the [`latest release.`](https://github.com/achelak/kubeaim/releases)
 
 ## Dependecies
-Installed the kubcectl command-line tool. 
+Installed the kubectl command-line tool. 
 
 ## License
 
