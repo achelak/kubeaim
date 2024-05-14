@@ -1,5 +1,8 @@
 <h1 align="center">☸️ kubeaim ☸️</h1>
 <p align="center">
+⭐️ <strong>Do you like kubeaim? Support the project with a star</strong> ⭐️
+</p>
+<p align="center">
     <img src='https://github.com/achelak/kubeaim/blob/main/img/kubeaim_demo.gif'>
     <p align="center">
         The gif shows the demo of using the kubeaim command-line tool.
@@ -10,10 +13,6 @@
 ## What is it?
 
 Kubeaim is a command line tool that provides an easy way to switch between kubernetes contexts. With kubeaim you can quickly and easily switch between k8s contexts.
-
-<p align="center">
-⭐️ <strong>Do you like kubeaim? Support the project with a star</strong> ⭐️
-</p>
 
 ## How to use it?
 
