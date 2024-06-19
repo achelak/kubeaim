@@ -21,7 +21,7 @@ Download the binary from the [`latest release.`](https://github.com/achelak/kube
 ## Usage recommendations
 Add useful aliases fot kubectl and kubeaim:
 ```
-echo "alias k=\"kubectl\"\nalias ka=\"kubeaim\"" >> .bashrc
+echo "alias k=\"kubectl\"\nalias ka=\"kubeaim\"" >> ~/.bashrc
 ```
 
 ## Dependecies
